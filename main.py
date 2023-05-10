@@ -34,14 +34,16 @@ def staffmembersinfo():
               day = input("Day off (press enter to cancel): ")
   return name, hourlyrate, day
 
-def newStaffMemberInfo():
-  started = 0;
+def newStaffID():
   ##in the future I will add a piece of code here
   ##which counts the number of emplyees and adds 1
-  if started < 1:
-    memberID = 0
-    started+=1
+  memberID =0
+  return memberID
 
+def newStaffMemberInfo(memberID):
+  
+
+ 
   name = input("Input your name: ")
   
 
