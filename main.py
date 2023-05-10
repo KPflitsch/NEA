@@ -2,7 +2,7 @@ import sqlite3
 from datetime import datetime
 
 def staffmembersinfo():
-  namewhile = 0
+  name = ""
   hourlyratewhile = 0  
   day = ""
   
@@ -33,6 +33,13 @@ def staffmembersinfo():
             if day != "":
               day = input("Day off (press enter to cancel): ")
   return name, hourlyrate, day
+
+def newStaffMemberInfo():
+  full = False
+
+  
+
+
 
 
 def rotainfo():
