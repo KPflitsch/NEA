@@ -35,10 +35,32 @@ def staffmembersinfo():
   return name, hourlyrate, day
 
 def newStaffMemberInfo():
-  full = False
+  started = 0;
+  ##in the future I will add a piece of code here
+  ##which counts the number of emplyees and adds 1
+  if started < 1:
+    memberID = 0
+    started+=1
 
+  name = input("Input your name: ")
   
 
+  email = input("Input your email: ")
+  
+
+  askContDaysOff = input("Y/N: ")
+  if askContDaysOff == "Y" or askContDaysOff == "y":
+    contDaysOff = True;
+    
+  elif askContDaysOff == "N" or askContDaysOff == "n":
+    contDaysOff = False;
+    
+  else:
+    print("Go fuck yournelf its a yes or no question.")
+
+
+
+## create a function for managers as well
 
 
 
