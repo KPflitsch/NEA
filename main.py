@@ -96,6 +96,8 @@ sql = """CREATE TABLE managerinfo(
 crs.execute(sql)
 ## Function (def manInfoCreate) ends here
 
+
+## def make a function here create supervisor info (def supInfoCreate)
 crs.execute("DROP TABLE IF EXISTS supervisorinfo")
 sql = """CREATE TABLE supervisorinfo(
         name VARCHAR(225) NOT NULL,
@@ -103,6 +105,13 @@ sql = """CREATE TABLE supervisorinfo(
         contdaysoff VARCHAR(225) DEFAULT NULL
       );"""
 crs.execute(sql)
+## (def supInfoCreate) ends her
+
+##########################
+####make all of these#####
+####silly SQL things######
+####its own function######
+##########################
 
 crs.execute("DROP TABLE IF EXISTS fulltimeinfo")
 sql = """CREATE TABLE fulltimeinfo(
