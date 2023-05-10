@@ -85,6 +85,8 @@ crs = connection.cursor()
 
 
 ###--creating blank tables start--###
+
+## def make a funciton here create manager info (def manInfoCreate)
 crs.execute("DROP TABLE IF EXISTS managerinfo")
 sql = """CREATE TABLE managerinfo(
         name VARCHAR(225) NOT NULL,
@@ -92,6 +94,7 @@ sql = """CREATE TABLE managerinfo(
         contdaysoff VARCHAR(225) DEFAULT NULL
       );"""
 crs.execute(sql)
+## Function (def manInfoCreate) ends here
 
 crs.execute("DROP TABLE IF EXISTS supervisorinfo")
 sql = """CREATE TABLE supervisorinfo(
