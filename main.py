@@ -40,25 +40,29 @@ def newStaffID():
   memberID =0
   return memberID
 
-def newStaffMemberInfo(memberID):
-  
+def newStaffMemberInfo():
+  userSatisfied = False
 
- 
-  name = input("Input your name: ")
-  
-
-  email = input("Input your email: ")
-  
-
-  askContDaysOff = input("Y/N: ")
-  if askContDaysOff == "Y" or askContDaysOff == "y":
-    contDaysOff = True;
+  if userSatisfied == False:
+    name = input("Input your name: ")
+    email = input("Input your email: ")
     
-  elif askContDaysOff == "N" or askContDaysOff == "n":
-    contDaysOff = False;
-    
-  else:
-    print("Go fuck yournelf its a yes or no question.")
+    askContDaysOff = input("Y/N: ")
+    if askContDaysOff == "Y" or askContDaysOff == "y":
+      contDaysOff = True;
+      
+    elif askContDaysOff == "N" or askContDaysOff == "n":
+      contDaysOff = False;
+      
+    else:
+      print("Go fuck yournelf its a yes or no question.")
+
+    askUserSatisfied = input("Y/N: ")
+    if askUserSatisfied == "Y" or askUserSatisfied == "y":
+      userSatisfied = True;
+
+  return name, email, contDaysOff
+
 
 
 
