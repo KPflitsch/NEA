@@ -40,6 +40,8 @@ def newStaffID():
   memberID =0
   return memberID
 
+##test
+
 def newStaffMemberInfo():
   userSatisfied = False
 
